@@ -1,0 +1,43 @@
+*background:  #19141D
+*foreground:  #E9CBAC
+*color0:  #152302
+*color1:  #d40038
+*color2:  #C4C8A8
+*color3:  #d47a00
+*color4:  #78008b
+*color5:  #d40089
+*color6:  #1e948b
+*color7:  #cbcdc8
+*color8:  #5b7759
+*color9:  #e53e46
+*color10:  #c4c8a8
+*color11:  #e5961e
+*color12:  #873e9c
+*color13:  #c03e9c
+*color14:  #67bc74
+*color15:  #ffffff
+
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800
+URxvt.scrollBar: false
+URxvt.boldFont: xft:Hack Nerd Font:size=13,style=Bold
+URxvt.font: xft:Hack Nerd Font:size=13
+URxvt.internalBorder: 20
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+!! Extensions
+URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select,selection-to-clipboard
+URxvt.colorUL:		#67bc74
+!! url-select
+URxvt.keysym.M-u:	perl:url-select:select_next
+URxvt.url-select.launcher: linkhandler
+URxvt.url-select.underline: true
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.resize-font.smaller:	C-j
+URxvt.resize-font.bigger:	C-k
